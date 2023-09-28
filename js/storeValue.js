@@ -1094,7 +1094,8 @@ function writeLoadQ(elShown,latihan_un,smk,mapel,practice,ready,next)
  e="<h3>"+practice+"</h3></br>";
  f="<h3>"+ready+"<h3></br>";
  g="<p class='button'><a class='btn btn-success' href="+next+">Start</a></p></br>";
- h="<h3>(c) widiopranoto@gmail.com</h3></br></article>";
+ //g="<button class='w3-bar-item w3-btn w3-green' id='' title='' onclick="playAudio('begin')" href="+next+">Start</button></p></br>";
+ h="<h3>(c) BPTIK Dikbud Jateng</h3></br></article>";
  i=a+b+c+d+dd+e+f+g+h;
  document.getElementById(elShown).innerHTML=i;	
 }
@@ -1342,4 +1343,7 @@ document.writeln(" </div> ");
 document.writeln(" </div> "); 
 }	
 
-
+function playAudio(idAudio) { 
+  var x = document.getElementById(idAudio); 
+  x.play(); 
+} 
