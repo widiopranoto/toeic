@@ -21,7 +21,7 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   </head>
-  <body style="padding-top: 70px">
+  <body style="padding-top: 30px" allow="autoplay">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,6 +56,7 @@
 	</br>
     <style>
     .mySlides {display:none;}
+    #begin {display:none;}
     </style>
     <div class="w3-content w3-section" style="max-width:500px">
       <img class="mySlides" src="images/bptik-jateng.png" style="width:100%">
@@ -93,5 +94,62 @@
   </article>
   </div><!--load_questions-->
   <!--end-->
+  <div id='audio'>
+    <audio id="begin" preload="auto">
+      <source src="sound/begin.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="bonus">
+      <source src="sound/bonus.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="coin">
+      <source src="sound/coin.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="end">
+      <source src="sound/end.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="fail">
+      <source src="sound/fail.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="gameover">
+      <source src="sound/gameover.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="jump">
+      <source src="sound/jump.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="levelup">
+      <source src="sound/levelup.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="timeup">
+      <source src="sound/timeup.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="whistle">
+      <source src="sound/whistle.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="woo">
+      <source src="sound/woo.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="yeah">
+      <source src="sound/yeah.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="fail2">
+      <source src="sound/fail2.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      var sample = document.getElementById("begin");
+      sample.play();
+    </script>
   </body>
 </html>
